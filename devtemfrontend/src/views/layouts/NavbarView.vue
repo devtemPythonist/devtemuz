@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-app-bar app height="60px" :prominent="false" elevation="1">
+    <v-app-bar app height="60px" :prominent="false" elevation="3" round class="blurred-app-bar">
       <router-link to="/">
-        <v-btn>Logo</v-btn>
+        <v-btn>Devtem</v-btn>
       </router-link>
       <v-spacer></v-spacer>
       <v-sheet class="center-header" max-width="50%"
@@ -46,7 +46,6 @@
         </v-slide-group>
       </v-sheet>
       <v-spacer></v-spacer>
-      <h1>Navbar</h1>
     </v-app-bar>
   </div>
 </template>
@@ -88,6 +87,11 @@ export default {
 </script>
 
 <style scoped>
+.blurred-app-bar {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(8px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(8px); /* For Safari support */
+}
 #main-header {
   left: 0 !important;
   background: #fff;

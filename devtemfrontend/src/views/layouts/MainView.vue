@@ -2,8 +2,8 @@
   <v-layout class="rounded rounded-md">
     <v-app>
       <navbar-view></navbar-view>
-      <router-view class="" style="margin-top: px"></router-view>
-      <v-footer fixed padless color="red" style="z-index: 9">
+      <router-view></router-view>
+      <v-footer fixed padless color="red" class="footer-class">
         <footer-view></footer-view>
       </v-footer>
     </v-app>
@@ -26,3 +26,10 @@ export default {
   },
 };
 </script>
+<style scoped>
+.footer-class {
+  max-height: 40px !important;
+  padding: 0px;
+  margin: 0px;
+}
+</style>
