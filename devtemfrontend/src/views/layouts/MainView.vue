@@ -1,6 +1,6 @@
 <template>
   <v-layout class="rounded rounded-md">
-    <v-app style="background-color: #f1f5f8">
+    <v-app>
       <navbar-view></navbar-view>
       <router-view class="" style="margin-top: px"></router-view>
       <v-footer fixed padless color="red" style="z-index: 9">

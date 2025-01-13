@@ -6,21 +6,7 @@
       </div>
       <v-spacer></v-spacer>
 
-      <v-btn
-          color="primary"
-          class="ml-4"
-          small
-          icon
-          to="/chat-sidebar/space/chat"
-        >
-          <v-icon>mdi-wechat</v-icon>
-        </v-btn>
-      <v-btn color="primary" class="ml-4" small icon to="/timeline-sidebar/timeline" >
-        <v-icon>mdi-forum-outline</v-icon>
-      </v-btn>
-        <v-btn color="primary" class="ml-4" small icon to="/phone-sidebar/phonebook/list">
-        <v-icon>mdi-phone</v-icon>
-      </v-btn>
+
     </v-toolbar>
   </template>
   <script>
