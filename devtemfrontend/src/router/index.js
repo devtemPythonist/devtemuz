@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 // Import your components for the routes
 import HomeView from '../views/HomeView.vue';
-import AboutView from '../views/AboutView.vue';
+import TelegrambotView from '../views/TelegrambotView.vue';
 import MainView from '../views/layouts/MainView.vue';
 import SidebarView from '../views/layouts/SidebarView.vue';
 import HrModuleView from '../views/HrModuleView.vue';
@@ -20,6 +20,10 @@ const routes = [
         name: 'SidebarView',
         component: SidebarView,
         children: [
+          {
+            path: "/",
+            redirect: "/main-sidebar/hometest",
+        },
           {
             path: 'hometest', // This will be nested under '/main-sidebar'
             name: 'HomeView',
@@ -40,9 +44,9 @@ const routes = [
     ]
   },
   {
-    path: '/about',
-    name: 'AboutView',
-    component: AboutView,
+    path: '/telegrambot',
+    name: 'TelegrambotView',
+    component: TelegrambotView,
   },
 ];
 
